@@ -1,0 +1,369 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#gpio_pins ul{
+    margin: 10px auto;
+    padding: 5px 0px 10px;
+    list-style: none;
+    width: 72px;
+    background-color: #999;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #333;
+    
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+}
+
+#gpio_pins ul li{
+    height: 18px;
+    margin: 0px;
+    padding: 5px 7px;
+    width: 68px;
+    display: block;
+}
+
+.pins{
+    margin: 2px 4px;
+    height: 20px;
+    width: 20px;
+    float: left;
+    border: 1.2px solid #000;
+    position: relative;
+    border-radius: 100%;
+}
+
+#o{
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    height: 9.8px;
+    width: 9.8px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 100%;
+}
+
+#o.etkin{
+  background-color: #00b318;
+  box-shadow: 0px 0px 10px 6px #46ff5f;
+  border-color: #46ff5f;
+}
+
+#o.pasif{
+  background-color: #ff0000;
+  box-shadow: 0px 0px 10px 6px #ff0000;
+  border-color: #ff0000;
+}
+
+#pin01{
+    border-radius: 4px;
+    background-color: #c83737;
+}
+
+.pin-red{
+    background-color: #ff0000;
+}
+
+.pin-blue{
+    background-color: #58abff;
+}
+
+.pin-black{
+    background-color: #000;
+}
+
+.pin-green{
+    background-color: #00b200;
+}
+
+.pin-orange{
+    background-color: #ff952a;
+}
+
+.pin-darkred{
+    background-color: #c83737;
+}
+
+.pin-purple{
+    background-color: #db5bff;
+}
+
+.pin-yellow{
+    background-color: #ffcc00;
+}
+
+#pin01:before{
+    content: "3.3v | 01";
+    position: absolute;
+    left: -115px;
+    color: #888;
+}
+
+#pin03:before{
+    content: "GPIO02 | 03";
+    position: absolute;
+    left: -140px;
+    font-size: 12pt;
+    color: #888;
+}
+
+#pin05:before{
+    content: "GPIO03 | 05";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+
+#pin07:before{
+    content: "GPIO04 | 07";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+
+#pin09:before{
+    content: "Ground | 09";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin11:before{
+    content: "GPIO17 | 11";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin13:before{
+    content: "GPIO27 | 13";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin15:before{
+    content: "GPIO22 | 15";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+
+#pin17:before{
+    content: "3.3v | 17";
+    position: absolute;
+    left: -115px;
+    color: #888;
+}
+
+#pin19:before{
+    content: "GPIO10 | 19";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin21:before{
+    content: "GPIO09 | 21";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin23:before{
+    content: "GPIO11 | 23";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin25:before{
+    content: "Ground | 25";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin27:before{
+    content: "ID_SD | 27";
+    position: absolute;
+    left: -129px;
+    color: #888;
+}
+#pin29:before{
+    content: "GPIO05 | 29";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin31:before{
+    content: "GPIO06 | 31";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin33:before{
+    content: "GPIO13 | 33";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin35:before{
+    content: "GPIO19 | 35";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin37:before{
+    content: "GPIO26 | 37";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+#pin39:before{
+    content: "Ground | 39";
+    position: absolute;
+    left: -140px;
+    color: #888;
+}
+
+#pin02:before{
+    content: "02 | 5v DC Power";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin04:before{
+    content: "04 | 5v DC Power";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin06:before{
+    content: "06 | Ground";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin08:before{
+    content: "08 | GPIO14";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin10:before{
+    content: "10 | GPIO15";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin12:before{
+    content: "12 | GPIO18";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin14:before{
+    content: "14 | Ground";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin16:before{
+    content: "16 | GPIO23";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin18:before{
+    content: "18 | GPIO24";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin20:before{
+    content: "20 | Ground";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin22:before{
+    content: "22 | GPIO25";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin24:before{
+    content: "24 | GPIO08";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin26:before{
+    content: "26 | GPIO07";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin28:before{
+    content: "28 | ID_SC";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin30:before{
+    content: "30 | GROUND";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin32:before{
+    content: "32 | GPIO12";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin34:before{
+    content: "34 | GROUND";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin36:before{
+    content: "36 | GPIO16";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin38:before{
+    content: "38 | GPIO20";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
+#pin40:before{
+    content: "40 | GPIO21";
+    position: absolute;
+    color: #888;
+    left: 60px;
+    width: 150px;
+}
